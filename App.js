@@ -53,6 +53,7 @@ export default class Bananas extends Component {
     };
     return (
       <Image source={pic2} style={{width: 193, height: 110}}/>
+      
     );
   }
 }
