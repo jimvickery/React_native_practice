@@ -351,9 +351,10 @@ export default class IScrolledDownAndWhatHappenedNextShockedMe extends Component
       return (
         <ScrollView>
           <Text style={{fontSize:96}}>Scroll me plz</Text>
+          
           <Image source={{uri: "https://sillysnap.s3.amazonaws.com/uploads/gallery/picture/113/thumb_coke_dog.gif", width: 64, height: 64}} />
           <Image source={{uri: "https://sillysnap.s3.amazonaws.com/uploads/gallery/picture/111/thumb_gsgdyafdsf.gif", width: 64, height: 64}} />
-          <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
+          <Image source={{uri: "https://sillysnap.s3.amazonaws.com/uploads/gallery/picture/57/thumb_Boneless_Pork_Rectums.jpg", width: 64, height: 64}} />
           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
           <Image source={{uri: "https://facebook.github.io/react-native/img/favicon.png", width: 64, height: 64}} />
           <Text style={{fontSize:96}}>If you like</Text>
