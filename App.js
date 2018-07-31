@@ -133,27 +133,53 @@
 // // skip this line if using Create React Native App
 // AppRegistry.registerComponent('AwesomeProject', () => LotsOfStyles);
 
+// import React, { Component } from 'react';
+// import { AppRegistry, View } from 'react-native';
+
+// export default class FixedDimensionsBasics extends Component {
+//   render() {
+//     return (
+//       <View style={{flex: 1}}>
+//         <View style={{flex: 2, backgroundColor: 'darkblue'}} />
+//         <View style={{flex: 3, backgroundColor: 'lightgray'}} />
+//         <View style={{flex: 1, backgroundColor: 'darkblue'}} />
+//         <View style={{flex: 3, backgroundColor: 'lightgray'}} />
+//         <View style={{flex: 1, backgroundColor: 'darkblue'}} />
+//         <View style={{flex: 3, backgroundColor: 'lightgray'}} />
+//         <View style={{flex: 1, backgroundColor: 'darkblue'}} />
+//         <View style={{flex: 3, backgroundColor: 'lightgray'}} />
+//         <View style={{flex: 1, backgroundColor: 'darkblue'}} />
+
+//    </View>
+//     );
+//   }
+// }
+
+// // skip this line if using Create React Native App
+// AppRegistry.registerComponent('AwesomeProject', () => FixedDimensionsBasics);
+
+
 import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 
-export default class FixedDimensionsBasics extends Component {
+export default class FlexDimensionsBasics extends Component {
   render() {
     return (
-      <View style={{flex: 1}}>
-        <View style={{flex: 2, backgroundColor: 'darkblue'}} />
-        <View style={{flex: 3, backgroundColor: 'lightgray'}} />
-        <View style={{flex: 1, backgroundColor: 'darkblue'}} />
-        <View style={{flex: 3, backgroundColor: 'lightgray'}} />
-        <View style={{flex: 1, backgroundColor: 'darkblue'}} />
-        <View style={{flex: 3, backgroundColor: 'lightgray'}} />
-        <View style={{flex: 1, backgroundColor: 'darkblue'}} />
-        <View style={{flex: 3, backgroundColor: 'lightgray'}} />
-        <View style={{flex: 1, backgroundColor: 'darkblue'}} />
-
-   </View>
+      // Try removing the `flex: 1` on the parent View.
+      // The parent will not have dimensions, so the children can't expand.
+      // What if you add `height: 300` instead of `flex: 1`?
+      <View style={{
+        flex: 1, 
+        flexDirection: 'column',
+        justifyContent: "space-between",
+        }}>
+        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+      </View>
     );
   }
 }
 
 // skip this line if using Create React Native App
-AppRegistry.registerComponent('AwesomeProject', () => FixedDimensionsBasics);
+AppRegistry.registerComponent('AwesomeProject', () => FlexDimensionsBasics);
